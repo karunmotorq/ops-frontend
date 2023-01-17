@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "customerMethods",
+    "pageId": "Auth0 users",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetCustomerNames: () => {\n\t\tvar obj = getCustomers.data.values.map((row) => {\n\t\t\treturn {\n\t\t\t\t\"label\": row,\n\t\t\t\t\"value\": row,\n\t\t\t}\n\t\t})\n\t\treturn obj;\n\t},\n\tgetCustomerData: () => {\n\t\tstoreValue(\"customer_data\", []);\n\t\tvar data = getDataSources.data.values.map((row) => {\n\t\t\treturn row;\n\t\t});\n\t\tstoreValue(\"customer_data\", data);\n\t\tvar dataSourceOptions = data.map((row) => {\n\t\t\tvar accounts = row.accounts.map((row) => {\n\t\t\t\treturn {\n\t\t\t\t\t'label': row,\n\t\t\t\t\t'value': row\n\t\t\t\t}\n\t\t\t});\n\t\t\tstoreValue(`dataSource_${row.name}_accounts`, accounts);\n\t\t\tvar dataServices = row.dataServices.names.map((row) => {\n\t\t\t\treturn {\n\t\t\t\t\t'label': row,\n\t\t\t\t\t'value': row\n\t\t\t\t}\n\t\t\t});\n\t\t\tstoreValue(`dataSource_${row.name}_dataServices`, dataServices);\n\t\t\treturn {\n\t\t\t\t'label': row.name,\n\t\t\t\t'value': row.name,\n\t\t\t}\n\t\t})\n\t\tstoreValue(\"dataSourceOptions\", dataSourceOptions);\n\t}\n\t\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Auth0 users_customerMethods",
+  "deleted": false,
+  "gitSyncId": "619b52a196d9bd0082a4d931_61def1e4dd80ea520d453729"
+}

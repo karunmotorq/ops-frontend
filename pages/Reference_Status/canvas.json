@@ -1,0 +1,1502 @@
+{
+  "unpublishedPage": {
+    "name": "Reference_Status",
+    "slug": "reference-status",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 730,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 880,
+          "containerStyle": "none",
+          "snapRows": 52,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 71,
+          "minHeight": 810,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "none",
+              "widgetName": "Button1Copy",
+              "onClick": "{{showModal('HelpModal')}}",
+              "buttonColor": "#03b365",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca02633.svg",
+              "topRow": 0,
+              "bottomRow": 4,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 13.296875,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 53,
+              "dynamicBindingPathList": [],
+              "text": "Help",
+              "isDisabled": false,
+              "key": "5z51nb2gj2",
+              "labelTextSize": "0.875rem",
+              "rightColumn": 62,
+              "isDefaultClickDisabled": true,
+              "iconName": "info-sign",
+              "widgetId": "82bs6i75z9",
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0.375rem",
+              "buttonVariant": "PRIMARY",
+              "iconAlign": "left",
+              "placement": "CENTER"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "HelpModal",
+              "isCanvas": true,
+              "displayName": "Modal",
+              "iconSVG": "/static/media/icon.4975978e.svg",
+              "topRow": 77,
+              "bottomRow": 101,
+              "parentRowSpace": 10,
+              "type": "MODAL_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "parentColumnSpace": 7.3287200927734375,
+              "leftColumn": 20,
+              "children": [
+                {
+                  "boxShadow": "none",
+                  "widgetName": "Canvas4",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 410,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 410,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Icon1Copy",
+                      "onClick": "{{closeModal('HelpModal')}}",
+                      "buttonColor": "#2E3D49",
+                      "displayName": "Icon",
+                      "iconSVG": "/static/media/icon.31d6cfe0.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": true,
+                      "leftColumn": 56,
+                      "iconSize": 24,
+                      "key": "elivwcbqu1",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 64,
+                      "iconName": "cross",
+                      "widgetId": "fxwz0988fs",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "merx0p64ln",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "buttonVariant": "TERTIARY"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Text2Copy",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
+                      "fontFamily": "System Default",
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Reference Status Page Help",
+                      "key": "p6o0qd1y8j",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 41,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "fncwwhyzha",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#03b365",
+                      "version": 1,
+                      "parentId": "merx0p64ln",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "1.5rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Button2",
+                      "onClick": "{{closeModal('HelpModal')}}",
+                      "buttonColor": "#03B365",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 35,
+                      "bottomRow": 39,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "leftColumn": 50,
+                      "text": "Close",
+                      "isDisabled": false,
+                      "key": "5z51nb2gj2",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 62,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "notw8iwu8o",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "merx0p64ln",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "buttonVariant": "SECONDARY",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "RichTextEditor1",
+                      "displayName": "Rich Text Editor",
+                      "iconSVG": "/static/media/icon.b35e139c.svg",
+                      "topRow": 5,
+                      "bottomRow": 34,
+                      "parentRowSpace": 10,
+                      "type": "RICH_TEXT_EDITOR_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.9375,
+                      "dynamicTriggerPathList": [],
+                      "isToolbarHidden": true,
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "inputType": "markdown",
+                      "isDisabled": true,
+                      "key": "k2oaik6hd9",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "rightColumn": 62,
+                      "isDefaultClickDisabled": true,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "twn6qs9o8p",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "merx0p64ln",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "maxDynamicHeight": 9000,
+                      "defaultText": "# General Instructions\n\n1. **Reference Id** can be used to identify a single operation performed on the portal.\n2. **Bulk Id** can be used to find all the operations of a particular type that were present in the uploaded file.\n3. All the operations performed on the portal can be found in the **Reference Status** page.\n4. If you face any errors while selecting a `customer` for a page, it is most likely because of invalid credentials setup for the selected customer. Try setting the correct credentials for the customer in the **Customers** page or contact the support team.\n\n\n# Reference Status\n\nYou can use this page to track the status of the operations performed on other pages. It contains all the information such as who performed the operation, when the operation was performed etc.\n\n**Note**:\n1. Clicking on any `row` opens a pop up window with a more details about the operation.\n2. You can add or remove `columns` in the table using the fields dropdown.\n3. To view the operation/error object, please click on the `row` of the operation. This opens a pop up window with the details of the operation. Please click on the **copy button** on the top to copy the json version of the data. The json data will contain the error object.\n",
+                      "minDynamicHeight": 4
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "0tg3ah6eki",
+                  "labelTextSize": "0.875rem",
+                  "rightColumn": 175.8892822265625,
+                  "detachFromLayout": true,
+                  "widgetId": "merx0p64ln",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "h7r627y8m7",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "0px"
+                }
+              ],
+              "key": "7ahkypa07e",
+              "height": 410,
+              "labelTextSize": "0.875rem",
+              "rightColumn": 44,
+              "detachFromLayout": true,
+              "dynamicHeight": "FIXED",
+              "widgetId": "h7r627y8m7",
+              "canOutsideClickClose": true,
+              "canEscapeKeyClose": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0px",
+              "maxDynamicHeight": 9000,
+              "width": 819.8499999999999,
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "EnrollmentTableContainer",
+              "borderColor": "transparent",
+              "isCanvas": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "displayName": "Container",
+              "iconSVG": "/static/media/icon.1977dca3.svg",
+              "topRow": 4,
+              "bottomRow": 86,
+              "parentRowSpace": 10,
+              "type": "CONTAINER_WIDGET",
+              "hideCard": false,
+              "parentColumnSpace": 14.90625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 3,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "boxShadow": "none",
+                  "widgetName": "Canvas5",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 780,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 400,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Button3Copy1",
+                      "onClick": "{{getEnrollmentsData.run(() => enrollmentsMethods.getEnrollmentsData(), (error) =>  errorMethods.handleError(error))}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 25,
+                      "bottomRow": 29,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 21.250732421875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 57,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Submit",
+                      "isDisabled": false,
+                      "key": "a1g5ztnzy5",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "l935tet591",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "0vo3bayp0a",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Button3Copy",
+                      "onClick": "{{getEnrollmentsData.run(() => enrollmentsMethods.getEnrollmentsData(), (error) =>  errorMethods.handleError(error))}}",
+                      "buttonColor": "#3366ff",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 25,
+                      "bottomRow": 29,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 21.250732421875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 51,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Refresh",
+                      "isDisabled": false,
+                      "key": "a1g5ztnzy5",
+                      "isDeprecated": false,
+                      "rightColumn": 57,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "jowuhxi5qt",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "0vo3bayp0a",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "CreatedBy",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "displayName": "TreeSelect",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "Created By",
+                      "topRow": 16,
+                      "bottomRow": 23,
+                      "parentRowSpace": 10,
+                      "type": "SINGLE_SELECT_TREE_WIDGET",
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "parentColumnSpace": 5.27734375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 44,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "options"
+                        },
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "options": "{{enrollmentsMethods.getCreatedByData()}}",
+                      "placeholderText": "e.g. user@motorq.com",
+                      "isDisabled": false,
+                      "key": "63ii6eh4cx",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "rightColumn": 64,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "ote0r62bub",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "expandAll": false,
+                      "parentId": "0vo3bayp0a",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "maxDynamicHeight": 9000,
+                      "onOptionChange": "",
+                      "allowClear": true,
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Action",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "displayName": "TreeSelect",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "Action",
+                      "topRow": 6,
+                      "bottomRow": 13,
+                      "parentRowSpace": 10,
+                      "type": "SINGLE_SELECT_TREE_WIDGET",
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "parentColumnSpace": 5.27734375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 23,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "options"
+                        },
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "options": "{{enrollmentsMethods.getActionsData()}}",
+                      "placeholderText": "e.g. enroll",
+                      "isDisabled": false,
+                      "key": "63ii6eh4cx",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "rightColumn": 43,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "xwqi3pm2nx",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "expandAll": false,
+                      "parentId": "0vo3bayp0a",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "maxDynamicHeight": 9000,
+                      "onOptionChange": "",
+                      "allowClear": true,
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "multiRowSelection": false,
+                      "boxShadow": "none",
+                      "isVisibleDownload": true,
+                      "iconSVG": "/static/media/icon.db8a9cbd.svg",
+                      "topRow": 31,
+                      "isSortable": false,
+                      "onPageChange": "{{getEnrollmentsData.run()}}",
+                      "type": "TABLE_WIDGET",
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "tableData"
+                        },
+                        {
+                          "key": "totalRecordsCount"
+                        },
+                        {
+                          "key": "primaryColumns.status.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.updatedat.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.action.computedValue"
+                        },
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "primaryColumns.createdat.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.type.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.createdby.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.customer.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.enrollmentId.computedValue"
+                        }
+                      ],
+                      "leftColumn": 1,
+                      "delimiter": ",",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisibleFilters": false,
+                      "isVisible": true,
+                      "version": 3,
+                      "totalRecordsCount": "{{getEnrollmentsData.data ? getEnrollmentsData.data['total'] : 0}}",
+                      "isLoading": false,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "menuButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "iconButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "borderRadius": "0px",
+                      "columnSizeMap": {
+                        "task": 245,
+                        "step": 62,
+                        "status": 75,
+                        "enrollmentId": 268,
+                        "error": 224
+                      },
+                      "widgetName": "EnrollmentsData",
+                      "defaultPageSize": 0,
+                      "columnOrder": [
+                        "id",
+                        "enrollmentId",
+                        "status",
+                        "createdat",
+                        "updatedat",
+                        "createdby",
+                        "action",
+                        "type",
+                        "customer"
+                      ],
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Table",
+                      "bottomRow": 76,
+                      "parentRowSpace": 10,
+                      "defaultSelectedRow": "0",
+                      "hideCard": false,
+                      "onPageSizeChange": "{{getEnrollmentsData.run()}}",
+                      "parentColumnSpace": 13.42919921875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onPageChange"
+                        },
+                        {
+                          "key": "onPageSizeChange"
+                        },
+                        {
+                          "key": "onRowSelected"
+                        }
+                      ],
+                      "primaryColumns": {
+                        "status": {
+                          "index": 3,
+                          "width": 150,
+                          "id": "status",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "status",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
+                        },
+                        "updatedat": {
+                          "index": 10,
+                          "width": 150,
+                          "id": "updatedat",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "updatedat",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.updatedat))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
+                        },
+                        "action": {
+                          "index": 10,
+                          "width": 150,
+                          "id": "action",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "action",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.action))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
+                        },
+                        "createdat": {
+                          "index": 4,
+                          "width": 150,
+                          "id": "createdat",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "createdat",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.createdat))}}",
+                          "cellBackground": ""
+                        },
+                        "type": {
+                          "index": 5,
+                          "width": 150,
+                          "id": "type",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "type",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.type))}}",
+                          "cellBackground": ""
+                        },
+                        "id": {
+                          "index": 0,
+                          "width": 150,
+                          "id": "id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "id",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
+                          "cellBackground": ""
+                        },
+                        "createdby": {
+                          "index": 7,
+                          "width": 150,
+                          "id": "createdby",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "createdby",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.createdby))}}",
+                          "cellBackground": ""
+                        },
+                        "customer": {
+                          "index": 10,
+                          "width": 150,
+                          "id": "customer",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "customer",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.customer))}}",
+                          "cellBackground": ""
+                        },
+                        "enrollmentId": {
+                          "index": 15,
+                          "width": 150,
+                          "id": "enrollmentId",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "enrollmentId",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.enrollmentId))}}",
+                          "cellBackground": ""
+                        }
+                      },
+                      "onRowSelected": "{{showModal('Modal1')}}",
+                      "key": "q8f1efavvd",
+                      "derivedColumns": {},
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 64,
+                      "textSize": "0.875rem",
+                      "widgetId": "olhe5ij1ss",
+                      "tableData": "{{enrollmentsMethods.getEnrollmentsData()}}",
+                      "label": "Data",
+                      "searchKey": "",
+                      "parentId": "0vo3bayp0a",
+                      "serverSidePaginationEnabled": true,
+                      "renderMode": "CANVAS",
+                      "horizontalAlignment": "LEFT",
+                      "isVisibleSearch": false,
+                      "isVisiblePagination": true,
+                      "verticalAlignment": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "EnrollmentsDataFields",
+                      "displayName": "MultiSelect",
+                      "iconSVG": "/static/media/icon.a3495809.svg",
+                      "labelText": "Fields",
+                      "topRow": 16,
+                      "bottomRow": 23,
+                      "parentRowSpace": 10,
+                      "type": "MULTI_SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "[\"id\", \"vin\", \"enrollmentId\", \"account\", \"vehicleId\", \"dataSource\", \"dataServices\", \"status\", \"operationId\", \"serialNumber\", \"bulkId\", \"error\", \"createdat\", \"updatedat\", \"createdby\", \"action\", \"type\", \"customer\"]",
+                      "parentColumnSpace": 13.42919921875,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 23,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "options": "[\n    {\n        \"label\": \"Reference ID\",\n        \"value\": \"id\"\n    },\n    {\n        \"label\": \"VIN\",\n        \"value\": \"vin\"\n    },\n    {\n        \"label\": \"Enrollment ID\",\n        \"value\": \"enrollmentId\"\n    },\n    {\n        \"label\": \"Account\",\n        \"value\": \"account\"\n    },\n    {\n        \"label\": \"Vehicle ID\",\n        \"value\": \"vehicleId\"\n    },\n    {\n        \"label\": \"Data Source\",\n        \"value\": \"dataSource\"\n    },\n    {\n        \"label\": \"Data Services\",\n        \"value\": \"dataServices\"\n    },\n    {\n        \"label\": \"Status\",\n        \"value\": \"status\"\n    },\n    {\n        \"label\": \"Operation ID\",\n        \"value\": \"operationId\"\n    },\n    {\n        \"label\": \"Serial Number\",\n        \"value\": \"serialNumber\"\n    },\n    {\n        \"label\": \"Bulk ID\",\n        \"value\": \"bulkId\"\n    },\n    {\n        \"label\": \"Errors\",\n        \"value\": \"error\"\n    },\n    {\n        \"label\": \"Created At\",\n        \"value\": \"createdat\"\n    },\n    {\n        \"label\": \"Retries\",\n        \"value\": \"retries\"\n    },\n    {\n        \"label\": \"Updated At\",\n        \"value\": \"updatedat\"\n    },\n    {\n        \"label\": \"Created By\",\n        \"value\": \"createdby\"\n    },\n    {\n        \"label\": \"Action\",\n        \"value\": \"action\"\n    },\n    {\n        \"label\": \"Type\",\n        \"value\": \"type\"\n    },\n    {\n        \"label\": \"Customer\",\n        \"value\": \"customer\"\n    }\n]",
+                      "placeholderText": "Select option(s)",
+                      "isDisabled": false,
+                      "key": "fhopzd0n9z",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "rightColumn": 43,
+                      "widgetId": "g1x0b29n6a",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "0vo3bayp0a",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "EnrollmentTableVINParams",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595.svg",
+                      "topRow": 9,
+                      "bottomRow": 13,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "parentColumnSpace": 13.42919921875,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 44,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "placeholderText": "(Optional)",
+                      "isDisabled": false,
+                      "key": "m3tssz8gqr",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "rightColumn": 64,
+                      "widgetId": "5mn3ucc3bf",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "VIN",
+                      "allowCurrencyChange": false,
+                      "version": 1,
+                      "parentId": "0vo3bayp0a",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "iconAlign": "left",
+                      "defaultText": ""
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "EnrollmentTableBulkIdParams",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "parentColumnSpace": 13.42919921875,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 23,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "defaultText"
+                        },
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "placeholderText": "(Optional)",
+                      "isDisabled": false,
+                      "key": "m3tssz8gqr",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "rightColumn": 43,
+                      "widgetId": "2to6q5z0w7",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Bulk ID",
+                      "allowCurrencyChange": false,
+                      "version": 1,
+                      "parentId": "0vo3bayp0a",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "iconAlign": "left",
+                      "defaultText": "{{appsmith.URL.queryParams.bulkId || \"\"}}"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "EnrollmentTableEnrollmentParam",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "parentColumnSpace": 13.42919921875,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 44,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "placeholderText": "(Optional)",
+                      "isDisabled": false,
+                      "key": "m3tssz8gqr",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "rightColumn": 64,
+                      "widgetId": "h0du223ncd",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Enrollment ID",
+                      "allowCurrencyChange": false,
+                      "version": 1,
+                      "parentId": "0vo3bayp0a",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "iconAlign": "left",
+                      "defaultText": ""
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "EnrollmentTableStatusParams",
+                      "isFilterable": false,
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "Status",
+                      "topRow": 16,
+                      "bottomRow": 23,
+                      "parentRowSpace": 10,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "selectionType": "SINGLE_SELECT",
+                      "parentColumnSpace": 13.42919921875,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "options": "[\n  {\n    \"label\": \"In Progress\",\n    \"value\": \"inProgress\"\n  },\n  {\n    \"label\": \"Succeeded\",\n    \"value\": \"succeeded\"\n  },\n  {\n    \"label\": \"Failed\",\n    \"value\": \"failed\"\n  }\n]",
+                      "placeholderText": "",
+                      "isDisabled": false,
+                      "key": "gzn2efh0dn",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "rightColumn": 22,
+                      "widgetId": "rk13t2oyjp",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "0vo3bayp0a",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "EnrollmentTableReferenceParam",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "parentColumnSpace": 13.42919921875,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "defaultText"
+                        },
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "placeholderText": "(Optional)",
+                      "isDisabled": false,
+                      "key": "m3tssz8gqr",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "rightColumn": 22,
+                      "widgetId": "ygkznpqe55",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Reference ID",
+                      "allowCurrencyChange": false,
+                      "version": 1,
+                      "parentId": "0vo3bayp0a",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "iconAlign": "left",
+                      "defaultText": "{{appsmith.URL.queryParams.referenceId || \"\"}}"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Customer_Name",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "displayName": "TreeSelect",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "Customer Name",
+                      "topRow": 6,
+                      "bottomRow": 13,
+                      "parentRowSpace": 10,
+                      "type": "SINGLE_SELECT_TREE_WIDGET",
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": false,
+                      "parentColumnSpace": 5.27734375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "options"
+                        },
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "options": "{{\n[\t\t...customerMethods.getCustomerNames()\n]\n}}",
+                      "placeholderText": "e.g. Toyota",
+                      "isDisabled": false,
+                      "key": "63ii6eh4cx",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "rightColumn": 22,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "rzk9x350p4",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "expandAll": false,
+                      "parentId": "0vo3bayp0a",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "maxDynamicHeight": 9000,
+                      "onOptionChange": "",
+                      "allowClear": true,
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Button3",
+                      "onClick": "{{resetWidget(\"EnrollmentTableContainer\",true)}}",
+                      "buttonColor": "#dc2626",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 25,
+                      "bottomRow": 29,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 21.250732421875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 44,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Reset",
+                      "isDisabled": false,
+                      "key": "a1g5ztnzy5",
+                      "isDeprecated": false,
+                      "rightColumn": 51,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "qusm9v4iig",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "0vo3bayp0a",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    }
+                  ],
+                  "key": "uw924ma44x",
+                  "labelTextSize": "0.875rem",
+                  "rightColumn": 357.75,
+                  "detachFromLayout": true,
+                  "widgetId": "0vo3bayp0a",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "hmhanx3rno",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "0px"
+                }
+              ],
+              "borderWidth": "0",
+              "key": "5koaqmm2aa",
+              "labelTextSize": "0.875rem",
+              "backgroundColor": "#FFFFFF",
+              "rightColumn": 62,
+              "dynamicHeight": "FIXED",
+              "widgetId": "hmhanx3rno",
+              "containerStyle": "card",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0px",
+              "maxDynamicHeight": 9000,
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "Modal1",
+              "isCanvas": true,
+              "displayName": "Modal",
+              "iconSVG": "/static/media/icon.4975978e.svg",
+              "topRow": 15,
+              "bottomRow": 39,
+              "parentRowSpace": 10,
+              "type": "MODAL_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "parentColumnSpace": 8.9638671875,
+              "leftColumn": 20,
+              "children": [
+                {
+                  "boxShadow": "none",
+                  "widgetName": "Canvas6",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 300,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 306,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Icon1",
+                      "onClick": "{{closeModal('Modal1')}}",
+                      "buttonColor": "#2E3D49",
+                      "displayName": "Icon",
+                      "iconSVG": "/static/media/icon.31d6cfe0.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": true,
+                      "leftColumn": 56,
+                      "iconSize": 24,
+                      "key": "4n00jfdchy",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 64,
+                      "iconName": "cross",
+                      "widgetId": "wd8cz8v2eg",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "kfs3xqmgn7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "buttonVariant": "TERTIARY"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Text1",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
+                      "fontFamily": "System Default",
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "text": "Details",
+                      "key": "4e2irxz273",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 14,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "xnuxbq61tv",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "kfs3xqmgn7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "1.5rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Button1",
+                      "onClick": "{{closeModal('Modal1')}}",
+                      "buttonColor": "#03B365",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 24,
+                      "bottomRow": 28,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "leftColumn": 49,
+                      "text": "Close",
+                      "isDisabled": false,
+                      "key": "jrnrx3z1i9",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 61,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "niiztp2lnz",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "version": 1,
+                      "recaptchaType": "V3",
+                      "parentId": "kfs3xqmgn7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "buttonVariant": "SECONDARY"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Text2",
+                      "borderColor": "#F6F7F8",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 7,
+                      "bottomRow": 23,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "parentColumnSpace": 6.9375,
+                      "dynamicTriggerPathList": [],
+                      "overflow": "SCROLL",
+                      "fontFamily": "System Default",
+                      "leftColumn": 4,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "text": "{{enrollmentsMethods.getSelectedRowInfo()}}",
+                      "key": "4e2irxz273",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 62,
+                      "backgroundColor": "#F6F7F8",
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "tdd8we4wld",
+                      "isVisible": true,
+                      "fontStyle": "",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "kfs3xqmgn7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "0.875rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "IconButton1",
+                      "onClick": "{{copyToClipboard(JSON.stringify(JSON.stringify(getEnrollmentsData.data.items[EnrollmentsData.selectedRowIndex]))); showAlert(\"Copied\", \"info\");}}",
+                      "buttonColor": "#F6F7F8",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "parentColumnSpace": 6.9375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 15,
+                      "dynamicBindingPathList": [],
+                      "isDisabled": false,
+                      "key": "v3ywohmxou",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 19,
+                      "iconName": "clipboard",
+                      "widgetId": "roq2hnubuy",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "kfs3xqmgn7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "9999px",
+                      "buttonVariant": "PRIMARY"
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "oqatmscboa",
+                  "labelTextSize": "0.875rem",
+                  "rightColumn": 215.1328125,
+                  "detachFromLayout": true,
+                  "widgetId": "kfs3xqmgn7",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "rojpjzjdda",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "0px"
+                }
+              ],
+              "key": "rwdx0l263v",
+              "height": 306,
+              "labelTextSize": "0.875rem",
+              "rightColumn": 44,
+              "detachFromLayout": true,
+              "dynamicHeight": "FIXED",
+              "widgetId": "rojpjzjdda",
+              "canOutsideClickClose": true,
+              "canEscapeKeyClose": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0px",
+              "maxDynamicHeight": 9000,
+              "width": 456,
+              "minDynamicHeight": 4
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Reference_Status_getReferenceInfoFilters",
+              "name": "getReferenceInfoFilters",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.user.username"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Reference_Status_getCustomers",
+              "name": "getCustomers",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.user.username"
+              ],
+              "timeoutInMillisecond": 1000000
+            }
+          ],
+          [
+            {
+              "id": "Reference_Status_getEnrollmentsData",
+              "name": "getEnrollmentsData",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "EnrollmentTableEnrollmentParam.text",
+                "EnrollmentTableBulkIdParams.text",
+                "250*(EnrollmentsData.pageNo - 1)",
+                "EnrollmentTableReferenceParam.text",
+                "Action.selectedOptionValue || \"\"",
+                "Customer_Name.selectedOptionValue || \"\"",
+                "EnrollmentTableStatusParams.selectedOptionValue || \"\"",
+                "CreatedBy.selectedOptionValue || \"\"",
+                "EnrollmentTableVINParams.text",
+                "appsmith.user.username"
+              ],
+              "timeoutInMillisecond": 1000000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Reference_Status",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "619b52a196d9bd0082a4d931_61c60638ca7d4160cd9299c2"
+}

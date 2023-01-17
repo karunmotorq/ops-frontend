@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "tableMethods",
+    "pageId": "Auth0 users",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetTableData: () => {\n\n\t\t\tvar data = getUserBulk.data.users;\n\t\t\tconst fields = ['email', 'name', 'orgs', 'roles']\n\t\t\tvar formattedData = []\n\t\t\tfor(const row of data){\n\t\t\t\tvar rowData = {}\n\t\t\t\tfor(const field of fields){\n\t\t\t\t\tif(field in row){\n\t\t\t\t\t\t\trowData[field] = row[field].toString()\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\tformattedData.push(rowData)\n\t\t\t}\n\t\treturn formattedData\n\t},\n\tTableData: () => {\n\t\tvar data = getNewCustomers.data.map((x)=> { return {Name:x.name, Email:x.email} })\n\t\treturn data\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Auth0 users_tableMethods",
+  "deleted": false,
+  "gitSyncId": "628b313b5ef89b7b113cf59a_62a08d6ca7fc1a496fb39f48"
+}

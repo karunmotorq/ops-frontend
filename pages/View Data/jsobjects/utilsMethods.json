@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "utilsMethods",
+    "pageId": "View Data",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetShowDataCursor: () => {\n\t\tif(!(appsmith.store.showDataCursor instanceof Array)){\n\t\t\treturn \"\";\n\t\t}\n\t\tconst cursorsArray = appsmith.store.showDataCursor;\n\t\tvar pageNumber = Table1.pageNo;\n\t\tif(pageNumber > cursorsArray.length){\n\t\t\tpageNumber = cursorsArray;\n\t\t}\n\t\treturn cursorsArray[pageNumber - 1];\n\t}\n}\n\n",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "View Data_utilsMethods",
+  "deleted": false,
+  "gitSyncId": "619b52a196d9bd0082a4d931_61c6063aca7d4160cd929b27"
+}

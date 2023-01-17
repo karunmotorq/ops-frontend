@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "enrollmentsMethods",
+    "pageId": "Auth0 users",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetEnrollmentsData: () => {\n\t\tvar data = getEnrollmentsData.data;\n\t\tif(!('items' in data)){\n\t\t\treturn [];\t// No data found\n\t\t}\n\t\tdata = data.items;\n\t\tvar formattedData = [];\n\t\tfor(const row of data){\n\t\t\tvar rowData = {};\n\t\t\tfor(const field of EnrollmentsDataFields.selectedOptionValues){\n\t\t\t\tif(field in row){\n\t\t\t\t\trowData[field] = row[field];\n\t\t\t\t}\n\t\t\t\telse{\n\t\t\t\t\trowData[field] = row[\"data\"][field];\n\t\t\t\t}\n\t\t\t\tif(rowData[field] instanceof Array){\n\t\t\t\t\trowData[field] = rowData[field].join();\n\t\t\t\t}\n\t\t\t\tif(field == 'updatedat' || field == 'createdat'){\n\t\t\t\t\tlet date = new Date(rowData[field]);\n\t\t\t\t\trowData[field] = date.toLocaleString();\n\t\t\t\t}\n\t\t\t\t\n\t\t\t}\n\t\t\tformattedData.push(rowData);\n\t\t\t\n\t\t}\n\n\t\treturn formattedData;\n\t},\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Auth0 users_enrollmentsMethods",
+  "deleted": false,
+  "gitSyncId": "619b52a196d9bd0082a4d931_61def1e8dd80ea520d45372d"
+}

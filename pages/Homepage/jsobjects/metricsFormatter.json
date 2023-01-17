@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "metricsFormatter",
+    "pageId": "Homepage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetDailyMetricsForGraph: () => {\n\t\tlet data = getMetrics.data;\n\t\tif(!data || !data.dailyMetrics){\n\t\t\treturn [];\n\t\t}\n\t\tdata = data.dailyMetrics;\n\t\tlet graphData = [];\n\t\tfor(let day of data){\n\t\t\tgraphData.push({x: day.date, y: day.totaloperations});\n\t\t}\n\t\treturn graphData;\n\t},\n\tgetTypesMetricsForGraph: () => {\n\t\tlet data = getMetrics.data;\n\t\tif(!data || !data.typeMetrics){\n\t\t\treturn [];\n\t\t}\n\t\tdata = data.typeMetrics;\n\t\tlet graphData = [];\n\t\tfor(let type of data){\n\t\t\tgraphData.push({x: type.type, y: type.totaloperations});\n\t\t}\n\t\treturn graphData;\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Homepage_metricsFormatter",
+  "deleted": false,
+  "gitSyncId": "6226c7facc223365f5cb4c67_62276bdecc223365f5cb4ced"
+}

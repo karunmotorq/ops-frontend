@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "visibility",
+    "pageId": "View Data",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tvisibility: (name) => {\n\t\tvar data = getDataSources.data\n\t\treturn data.features.includes(name);\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "View Data_visibility",
+  "deleted": false,
+  "gitSyncId": "628b313b5ef89b7b113cf59a_628f36e35ef89b7b113cf74d"
+}

@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "driverMethods",
+    "pageId": "Update Vehicle",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetDriverIds: () => {\n\t\tconst vehicleData = appsmith.store['updateVehicleData'];\n\t\tif(!(vehicleData instanceof Object)){\n\t\t\treturn [];\n\t\t}\n\t\tvar formattedDriverIds = [];\n\t\tfor(var driverId of vehicleData.driverIds){\n\t\t\tformattedDriverIds.push({\n\t\t\t\t\"driverId\": driverId\n\t\t\t});\n\t\t}\n\t\treturn formattedDriverIds;\n\t},\n\taddDriverId: (driverId) => {\n\t\tif(driverId.length == 0){\n\t\t\tshowAlert(\"Driver ID cannot be empty!\", 'error');\n\t\t\treturn;\n\t\t}\n\t\tvar data = appsmith.store['updateVehicleData'];\n\t\tdata.driverIds.push(driverId);\n\t\tstoreValue('updateVehicleData', data);\n\t\tcloseModal('addDriver');\n\t},\n\teditDriverId: (newDriverId, index) => {\n\t\tif(newDriverId.length == 0){\n\t\t\tshowAlert(\"Driver ID cannot be empty\", 'error');\n\t\t\treturn;\n\t\t}\n\t\tvar data = appsmith.store['updateVehicleData'];\n\t\tdata.driverIds[index] = newDriverId\n\t\tstoreValue('updateVehicleData', data);\n\t\tcloseModal('editDriver');\n\t},\n\tdeleteDriverId: (index) => {\n\t\tvar data = appsmith.store['updateVehicleData'];\n\t\tdata.driverIds.splice(index, 1);\n\t\tstoreValue('updateVehicleData', data);\n\t\tcloseModal('editDriver');\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Update Vehicle_driverMethods",
+  "deleted": false,
+  "gitSyncId": "619b52a196d9bd0082a4d931_61c6063aca7d4160cd929acc"
+}

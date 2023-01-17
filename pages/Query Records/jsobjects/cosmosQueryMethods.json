@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "cosmosQueryMethods",
+    "pageId": "Query Records",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetCustomerNames: () => {\n\t\tvar obj = getCustomers.data.values.map((row) => {\n\t\t\treturn {\n\t\t\t\t\"label\": row,\n\t\t\t\t\"value\": row,\n\t\t\t}\n\t\t})\n\t\treturn obj;\n\t},\n\tgetPretty: () => {\n\t\tvar obj = JSON.stringify(JSON.parse(JSON.stringify(postCosmosQueryData.data)), undefined, 2)  \n\t\treturn obj\n\t},\n\thandleError: () => {\n\t\tshowAlert(\"This Environment does not have fleet-streams ≥ v3.9.3.\", 'error');\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Query Records_cosmosQueryMethods",
+  "deleted": false,
+  "gitSyncId": "63a99cc21c4c1d655eacef5c_63a99d451c4c1d655eacf016"
+}

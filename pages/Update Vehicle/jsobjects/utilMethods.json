@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "utilMethods",
+    "pageId": "Update Vehicle",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetUpdateVehicleAttribute: (attribute) => {\n\t\tconst vehicleData = appsmith.store['updateVehicleData'];\n\t\tif(vehicleData instanceof Object){\n\t\t\treturn vehicleData[attribute].toString();\n\t\t}\n\t\treturn \"\";\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Update Vehicle_utilMethods",
+  "deleted": false,
+  "gitSyncId": "619b52a196d9bd0082a4d931_61c6063aca7d4160cd929ace"
+}

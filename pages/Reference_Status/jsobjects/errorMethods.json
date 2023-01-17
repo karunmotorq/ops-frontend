@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "errorMethods",
+    "pageId": "Reference_Status",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\thandleError: (error) => {\n\t\tif(error && error.message){\n\t\t\tshowAlert(error.message.toString(), 'error');\n\t\t\treturn;\n\t\t}\n\t\tshowAlert(\"Server Error. Please try again.\", 'error');\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Reference_Status_errorMethods",
+  "deleted": false,
+  "gitSyncId": "63a1a45278094f24407e240b_63a1d9b35c5f81557826c058"
+}

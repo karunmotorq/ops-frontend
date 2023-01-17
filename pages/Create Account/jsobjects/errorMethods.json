@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "errorMethods",
+    "pageId": "Create Account",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\thandleError: (error) => {\n\t\tif(error && error.message){\n\t\t\tshowAlert(error.message.toString(), 'error');\n\t\t\treturn;\n\t\t}\n\t\tshowAlert(\"Server Error. Please try again.\", 'error');\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Create Account_errorMethods",
+  "deleted": false,
+  "gitSyncId": "619b52a196d9bd0082a4d931_61c6063aca7d4160cd929ac8"
+}

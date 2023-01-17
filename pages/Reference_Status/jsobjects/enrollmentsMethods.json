@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "enrollmentsMethods",
+    "pageId": "Reference_Status",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetEnrollmentsData: () => {\n\t\tvar data = getEnrollmentsData.data;\n\t\tif(!('items' in data)){\n\t\t\treturn [];\t// No data found\n\t\t}\n\t\tdata = data.items;\n\t\tvar formattedData = [];\n\t\tfor(const row of data){\n\t\t\tvar rowData = {};\n\t\t\tfor(const field of EnrollmentsDataFields.selectedOptionValues){\n\t\t\t\tif(field in row){\n\t\t\t\t\trowData[field] = row[field];\n\t\t\t\t}\n\t\t\t\telse{\n\t\t\t\t\trowData[field] = row[\"data\"][field];\n\t\t\t\t}\n\t\t\t\tif(rowData[field] instanceof Array){\n\t\t\t\t\trowData[field] = rowData[field].join();\n\t\t\t\t}\n\t\t\t\tif(field == 'updatedat' || field == 'createdat'){\n\t\t\t\t\tlet date = new Date(rowData[field]);\n\t\t\t\t\trowData[field] = date.toLocaleString();\n\t\t\t\t}\n\t\t\t\t\n\t\t\t}\n\t\t\tformattedData.push(rowData);\n\t\t\t\n\t\t}\n\n\t\treturn formattedData;\n\t},\n\tgetSelectedRowInfo: () => {\n\t\tvar row = EnrollmentsData.selectedRowIndex;\n\t\tvar data = getEnrollmentsData.data.items[row];\n\t\tvar formattedText = \"\";\n\t\tfor(var item in data){\n\t\t\tif(data[item] instanceof Object){\n\t\t\t\tconst obj = data[item];\n\t\t\t\tfor(var data_item in obj){\n\t\t\t\t\tformattedText += \"<b>\" + data_item + \":</b> \" + JSON.stringify(obj[data_item]) + \"<br/>\";\n\t\t\t\t}\t\n\t\t\t}\n\t\t\telse{\n\t\t\t\tformattedText += \"<b>\" + item + \":</b> \" + JSON.stringify(data[item]) + \"<br/>\";\n\t\t\t}\n\t\t}\n\t\treturn formattedText;\n\t},\n\tgetActionsData: () => {\n\t\tlet data = getReferenceInfoFilters.data;\n\t\tif(!data || !data.actions){\n\t\t\treturn [];\n\t\t}\n\t\tlet actions = [];\n\t\tfor(let action of data.actions){\n\t\t\tactions.push({\"label\": action, \"value\": action});\n\t\t}\n\t\treturn actions;\n\t},\n\tgetCreatedByData: () => {\n\t\tlet data = getReferenceInfoFilters.data;\n\t\tif(!data || !data.users){\n\t\t\treturn [];\n\t\t}\n\t\tlet createdBy = [];\n\t\tfor(let user of data.users){\n\t\t\tif(user.createdby){\n\t\t\t\tcreatedBy.push({\"label\": user.createdby, \"value\": user.createdby});\n\t\t\t}\n\t\t}\n\t\treturn createdBy;\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Reference_Status_enrollmentsMethods",
+  "deleted": false,
+  "gitSyncId": "619b52a196d9bd0082a4d931_61c6063aca7d4160cd929ac4"
+}
