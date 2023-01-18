@@ -529,34 +529,58 @@
                           "key": "totalRecordsCount"
                         },
                         {
-                          "key": "primaryColumns.status.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.updatedat.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.action.computedValue"
-                        },
-                        {
                           "key": "accentColor"
-                        },
-                        {
-                          "key": "primaryColumns.createdat.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.type.computedValue"
                         },
                         {
                           "key": "primaryColumns.id.computedValue"
                         },
                         {
+                          "key": "primaryColumns.vin.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.account.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.dataSource.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.dataServices.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.status.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.operationId.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.serialNumber.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.error.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.createdat.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.updatedat.computedValue"
+                        },
+                        {
                           "key": "primaryColumns.createdby.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.action.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.type.computedValue"
                         },
                         {
                           "key": "primaryColumns.customer.computedValue"
                         },
                         {
-                          "key": "primaryColumns.enrollmentId.computedValue"
+                          "key": "primaryColumns.bulkId.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.source_error.computedValue"
                         }
                       ],
                       "leftColumn": 1,
@@ -590,20 +614,30 @@
                         "step": 62,
                         "status": 75,
                         "enrollmentId": 268,
-                        "error": 224
+                        "error": 224,
+                        "source_error": 295
                       },
                       "widgetName": "EnrollmentsData",
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "id",
-                        "enrollmentId",
                         "status",
                         "createdat",
                         "updatedat",
                         "createdby",
                         "action",
                         "type",
-                        "customer"
+                        "customer",
+                        "vin",
+                        "account",
+                        "dataSource",
+                        "dataServices",
+                        "operationId",
+                        "serialNumber",
+                        "error",
+                        "source_error",
+                        "bulkId",
+                        "customColumn1"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -625,100 +659,21 @@
                         }
                       ],
                       "primaryColumns": {
-                        "status": {
-                          "index": 3,
+                        "customColumn1": {
+                          "index": 16,
                           "width": 150,
-                          "id": "status",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
+                          "id": "customColumn1",
                           "columnType": "text",
-                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
                           "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "status",
-                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
-                          "borderRadius": "0px",
-                          "boxShadow": "none"
-                        },
-                        "updatedat": {
-                          "index": 10,
-                          "width": 150,
-                          "id": "updatedat",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "updatedat",
-                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.updatedat))}}",
-                          "borderRadius": "0px",
-                          "boxShadow": "none"
-                        },
-                        "action": {
-                          "index": 10,
-                          "width": 150,
-                          "id": "action",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "action",
-                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.action))}}",
-                          "borderRadius": "0px",
-                          "boxShadow": "none"
-                        },
-                        "createdat": {
-                          "index": 4,
-                          "width": 150,
-                          "id": "createdat",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "createdat",
-                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.createdat))}}",
-                          "cellBackground": ""
-                        },
-                        "type": {
-                          "index": 5,
-                          "width": 150,
-                          "id": "type",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "type",
-                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.type))}}",
-                          "cellBackground": ""
+                          "isDerived": true,
+                          "label": "source_error",
+                          "computedValue": "",
+                          "buttonStyle": "rgb(3, 179, 101)",
+                          "labelColor": "#FFFFFF"
                         },
                         "id": {
                           "index": 0,
@@ -739,8 +694,198 @@
                           "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
                           "cellBackground": ""
                         },
-                        "createdby": {
+                        "vin": {
+                          "index": 1,
+                          "width": 150,
+                          "id": "vin",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "vin",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.vin))}}",
+                          "cellBackground": ""
+                        },
+                        "account": {
+                          "index": 2,
+                          "width": 150,
+                          "id": "account",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "account",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.account))}}",
+                          "cellBackground": ""
+                        },
+                        "dataSource": {
+                          "index": 3,
+                          "width": 150,
+                          "id": "dataSource",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "dataSource",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.dataSource))}}",
+                          "cellBackground": ""
+                        },
+                        "dataServices": {
+                          "index": 4,
+                          "width": 150,
+                          "id": "dataServices",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "dataServices",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.dataServices))}}",
+                          "cellBackground": ""
+                        },
+                        "status": {
+                          "index": 5,
+                          "width": 150,
+                          "id": "status",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "status",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
+                          "cellBackground": ""
+                        },
+                        "operationId": {
+                          "index": 6,
+                          "width": 150,
+                          "id": "operationId",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "operationId",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.operationId))}}",
+                          "cellBackground": ""
+                        },
+                        "serialNumber": {
                           "index": 7,
+                          "width": 150,
+                          "id": "serialNumber",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "serialNumber",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.serialNumber))}}",
+                          "cellBackground": ""
+                        },
+                        "error": {
+                          "index": 8,
+                          "width": 150,
+                          "id": "error",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "error",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.error))}}",
+                          "cellBackground": ""
+                        },
+                        "createdat": {
+                          "index": 9,
+                          "width": 150,
+                          "id": "createdat",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "createdat",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.createdat))}}",
+                          "cellBackground": ""
+                        },
+                        "updatedat": {
+                          "index": 10,
+                          "width": 150,
+                          "id": "updatedat",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "updatedat",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.updatedat))}}",
+                          "cellBackground": ""
+                        },
+                        "createdby": {
+                          "index": 11,
                           "width": 150,
                           "id": "createdby",
                           "horizontalAlignment": "LEFT",
@@ -758,8 +903,46 @@
                           "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.createdby))}}",
                           "cellBackground": ""
                         },
+                        "action": {
+                          "index": 12,
+                          "width": 150,
+                          "id": "action",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "action",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.action))}}",
+                          "cellBackground": ""
+                        },
+                        "type": {
+                          "index": 13,
+                          "width": 150,
+                          "id": "type",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "type",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.type))}}",
+                          "cellBackground": ""
+                        },
                         "customer": {
-                          "index": 10,
+                          "index": 14,
                           "width": 150,
                           "id": "customer",
                           "horizontalAlignment": "LEFT",
@@ -777,10 +960,10 @@
                           "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.customer))}}",
                           "cellBackground": ""
                         },
-                        "enrollmentId": {
+                        "bulkId": {
                           "index": 15,
                           "width": 150,
-                          "id": "enrollmentId",
+                          "id": "bulkId",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -792,14 +975,50 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "enrollmentId",
-                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.enrollmentId))}}",
+                          "label": "bulkId",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.bulkId))}}",
+                          "cellBackground": ""
+                        },
+                        "source_error": {
+                          "index": 15,
+                          "width": 150,
+                          "id": "source_error",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "source_error",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.source_error))}}",
                           "cellBackground": ""
                         }
                       },
                       "onRowSelected": "{{showModal('Modal1')}}",
                       "key": "q8f1efavvd",
-                      "derivedColumns": {},
+                      "derivedColumns": {
+                        "customColumn1": {
+                          "index": 16,
+                          "width": 150,
+                          "id": "customColumn1",
+                          "columnType": "text",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": true,
+                          "label": "source_error",
+                          "computedValue": "",
+                          "buttonStyle": "rgb(3, 179, 101)",
+                          "labelColor": "#FFFFFF"
+                        }
+                      },
                       "labelTextSize": "0.875rem",
                       "rightColumn": 64,
                       "textSize": "0.875rem",
@@ -827,7 +1046,7 @@
                       "type": "MULTI_SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "[\"id\", \"vin\", \"enrollmentId\", \"account\", \"vehicleId\", \"dataSource\", \"dataServices\", \"status\", \"operationId\", \"serialNumber\", \"bulkId\", \"error\", \"createdat\", \"updatedat\", \"createdby\", \"action\", \"type\", \"customer\"]",
+                      "defaultOptionValue": "[\"id\", \"vin\", \"enrollmentId\", \"account\", \"vehicleId\", \"dataSource\", \"dataServices\", \"status\", \"operationId\", \"serialNumber\", \"bulkId\", \"error\", \"createdat\", \"updatedat\", \"createdby\", \"action\", \"type\", \"customer\", \"source_error\"]",
                       "parentColumnSpace": 13.42919921875,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 23,
@@ -836,7 +1055,7 @@
                           "key": "accentColor"
                         }
                       ],
-                      "options": "[\n    {\n        \"label\": \"Reference ID\",\n        \"value\": \"id\"\n    },\n    {\n        \"label\": \"VIN\",\n        \"value\": \"vin\"\n    },\n    {\n        \"label\": \"Enrollment ID\",\n        \"value\": \"enrollmentId\"\n    },\n    {\n        \"label\": \"Account\",\n        \"value\": \"account\"\n    },\n    {\n        \"label\": \"Vehicle ID\",\n        \"value\": \"vehicleId\"\n    },\n    {\n        \"label\": \"Data Source\",\n        \"value\": \"dataSource\"\n    },\n    {\n        \"label\": \"Data Services\",\n        \"value\": \"dataServices\"\n    },\n    {\n        \"label\": \"Status\",\n        \"value\": \"status\"\n    },\n    {\n        \"label\": \"Operation ID\",\n        \"value\": \"operationId\"\n    },\n    {\n        \"label\": \"Serial Number\",\n        \"value\": \"serialNumber\"\n    },\n    {\n        \"label\": \"Bulk ID\",\n        \"value\": \"bulkId\"\n    },\n    {\n        \"label\": \"Errors\",\n        \"value\": \"error\"\n    },\n    {\n        \"label\": \"Created At\",\n        \"value\": \"createdat\"\n    },\n    {\n        \"label\": \"Retries\",\n        \"value\": \"retries\"\n    },\n    {\n        \"label\": \"Updated At\",\n        \"value\": \"updatedat\"\n    },\n    {\n        \"label\": \"Created By\",\n        \"value\": \"createdby\"\n    },\n    {\n        \"label\": \"Action\",\n        \"value\": \"action\"\n    },\n    {\n        \"label\": \"Type\",\n        \"value\": \"type\"\n    },\n    {\n        \"label\": \"Customer\",\n        \"value\": \"customer\"\n    }\n]",
+                      "options": "[\n    {\n        \"label\": \"Reference ID\",\n        \"value\": \"id\"\n    },\n    {\n        \"label\": \"VIN\",\n        \"value\": \"vin\"\n    },\n    {\n        \"label\": \"Enrollment ID\",\n        \"value\": \"enrollmentId\"\n    },\n    {\n        \"label\": \"Account\",\n        \"value\": \"account\"\n    },\n    {\n        \"label\": \"Vehicle ID\",\n        \"value\": \"vehicleId\"\n    },\n    {\n        \"label\": \"Data Source\",\n        \"value\": \"dataSource\"\n    },\n    {\n        \"label\": \"Data Services\",\n        \"value\": \"dataServices\"\n    },\n    {\n        \"label\": \"Status\",\n        \"value\": \"status\"\n    },\n    {\n        \"label\": \"Operation ID\",\n        \"value\": \"operationId\"\n    },\n    {\n        \"label\": \"Serial Number\",\n        \"value\": \"serialNumber\"\n    },\n    {\n        \"label\": \"Bulk ID\",\n        \"value\": \"bulkId\"\n    },\n    {\n        \"label\": \"Errors\",\n        \"value\": \"error\"\n    },\n    {\n        \"label\": \"Created At\",\n        \"value\": \"createdat\"\n    },\n    {\n        \"label\": \"Retries\",\n        \"value\": \"retries\"\n    },\n    {\n        \"label\": \"Updated At\",\n        \"value\": \"updatedat\"\n    },\n    {\n        \"label\": \"Created By\",\n        \"value\": \"createdby\"\n    },\n    {\n        \"label\": \"Action\",\n        \"value\": \"action\"\n    },\n    {\n        \"label\": \"Type\",\n        \"value\": \"type\"\n    },\n    {\n        \"label\": \"Customer\",\n        \"value\": \"customer\"\n    },\n\t\t{\n\t\t\"label\": \"Source Error\",\n\t\t\"value\": \"source_error\"\n\t\t}\n]",
                       "placeholderText": "Select option(s)",
                       "isDisabled": false,
                       "key": "fhopzd0n9z",
@@ -1470,9 +1689,9 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
+                "250*(EnrollmentsData.pageNo - 1)",
                 "EnrollmentTableEnrollmentParam.text",
                 "EnrollmentTableBulkIdParams.text",
-                "250*(EnrollmentsData.pageNo - 1)",
                 "EnrollmentTableReferenceParam.text",
                 "Action.selectedOptionValue || \"\"",
                 "Customer_Name.selectedOptionValue || \"\"",
