@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 71,
+          "version": 75,
           "minHeight": 530,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -3473,7 +3473,7 @@
               "isLoading": false,
               "borderRadius": "0px",
               "maxDynamicHeight": 9000,
-              "onOptionChange": "{{ getOrgsAndRoles.run(() => {}, () => showAlert('Internal Server Error','error'))}}",
+              "onOptionChange": "{{ getOrgsAndRoles.run(() => {(Tabs1.selectedTab==\"View All Users\")?getUserBulk.run(): (Tabs1.selectedTab==\"Welcome Email\")?getNewCustomers.run():null}, () => showAlert('Internal Server Error','error'))}}",
               "allowClear": false,
               "minDynamicHeight": 4
             },
