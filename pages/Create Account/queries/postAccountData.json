@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 1000000,
       "paginationType": "NONE",
-      "path": "",
+      "path": "/customers/{{Customer_Name.selectedOptionValue}}/accounts/",
       "headers": [
         {
           "key": "content-type",
@@ -45,6 +45,9 @@
       },
       {
         "key": "body"
+      },
+      {
+        "key": "path"
       }
     ],
     "isValid": true,
@@ -56,6 +59,7 @@
       "City.text",
       "ConsentStatus.selectedOptionValue",
       "ConsentType.selectedOptionValue",
+      "Customer_Name.selectedOptionValue",
       "DataSource.selectedOptionValue",
       "Name.text",
       "State.text",

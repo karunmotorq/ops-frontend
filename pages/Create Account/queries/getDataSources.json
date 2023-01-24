@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 100000,
       "paginationType": "NONE",
-      "path": "",
+      "path": "/customers/{{Customer_Name.selectedOptionValue}}",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
@@ -33,6 +33,9 @@
     "dynamicBindingPathList": [
       {
         "key": "datasourceUrl"
+      },
+      {
+        "key": "path"
       }
     ],
     "isValid": true,
@@ -41,6 +44,7 @@
     ],
     "messages": [],
     "jsonPathKeys": [
+      "Customer_Name.selectedOptionValue",
       "appsmith.user.username"
     ],
     "userSetOnLoad": false,
