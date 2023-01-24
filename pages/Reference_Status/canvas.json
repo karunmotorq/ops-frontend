@@ -581,6 +581,12 @@
                         },
                         {
                           "key": "primaryColumns.source_error.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.enrollmentId.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.vehicleId.computedValue"
                         }
                       ],
                       "leftColumn": 1,
@@ -634,10 +640,11 @@
                         "action",
                         "type",
                         "customer",
-                        "error",
-                        "source_error",
+                        "enrollmentId",
+                        "vehicleId",
                         "bulkId",
-                        "customColumn1"
+                        "error",
+                        "source_error"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -659,22 +666,6 @@
                         }
                       ],
                       "primaryColumns": {
-                        "customColumn1": {
-                          "index": 16,
-                          "width": 150,
-                          "id": "customColumn1",
-                          "columnType": "text",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": true,
-                          "label": "source_error",
-                          "computedValue": "",
-                          "buttonStyle": "rgb(3, 179, 101)",
-                          "labelColor": "#FFFFFF"
-                        },
                         "id": {
                           "index": 0,
                           "width": 150,
@@ -997,28 +988,49 @@
                           "label": "source_error",
                           "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.source_error))}}",
                           "cellBackground": ""
-                        }
-                      },
-                      "onRowSelected": "{{showModal('Modal1')}}",
-                      "key": "q8f1efavvd",
-                      "derivedColumns": {
-                        "customColumn1": {
-                          "index": 16,
+                        },
+                        "enrollmentId": {
+                          "index": 14,
                           "width": 150,
-                          "id": "customColumn1",
+                          "id": "enrollmentId",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
                           "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
                           "isCellVisible": true,
-                          "isDerived": true,
-                          "label": "source_error",
-                          "computedValue": "",
-                          "buttonStyle": "rgb(3, 179, 101)",
-                          "labelColor": "#FFFFFF"
+                          "isDerived": false,
+                          "label": "enrollmentId",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.enrollmentId))}}",
+                          "cellBackground": ""
+                        },
+                        "vehicleId": {
+                          "index": 15,
+                          "width": 150,
+                          "id": "vehicleId",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "vehicleId",
+                          "computedValue": "{{EnrollmentsData.sanitizedTableData.map((currentRow) => ( currentRow.vehicleId))}}",
+                          "cellBackground": ""
                         }
                       },
+                      "onRowSelected": "{{showModal('Modal1')}}",
+                      "key": "q8f1efavvd",
+                      "derivedColumns": {},
                       "labelTextSize": "0.875rem",
                       "rightColumn": 64,
                       "textSize": "0.875rem",
